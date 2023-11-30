@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    form{
+        display: flex;
+        background-color: blanchedalmond;
+        flex-direction: column;
+        padding: 30px;
+        border: 2px solid;
+        width: 450px;
+        border-radius: 8px;
+        
+    }
+    label{
+        margin-bottom: 5px;
+    }
+    input,select{
+        width: 400px;
+        padding: 5px;
+        }
+    .button-group{
+        display: flex;
+        gap: 10px;
+    }
+    input[type=submit]{
+        max-width: 100px;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    input[type=reset]{
+        max-width: 100px;
+        border-radius: 4px;
+    }
+    textarea{
+        width: 400px;
+    }
+</style>
+<body>
+    <a href="./Index.html">Home |</a>
+    <a href="./Education.html">Education |</a>
+    <a href="./Work.html">Work Experience |</a>
+    <a href="./Contact.html">Contact Me |</a>
+    <hr>
+    <h1>Contact Me</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <label><strong>Enter your info :</strong></label>
+        <br>
+        <label for="yourname">Your Name</label>
+        <input type="text" placeholder="Bill Smith" id="yourname" name="YourName">
+        <br>
+        <label for="youremail">Your E-mail</label>
+        <input type="email" placeholder="abc@def.com" id="youremail" name="YourEmail">
+        <br>
+        <label for="gender">Gender</label>
+        <select name="Gender" id="gender">
+            <option disabled selected>Please Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="message">Massage</label>
+
+        <textarea name="text" id="massage" cols="30" rows="15" style="resize: none;">
+        </textarea>
+        <br>
+        <div class="button-group">
+            <input type="submit" name="OK">
+            <input type="reset" name="Clear">
+        </div>
+       
+
+    </form>
+
+</body>
+</html>
